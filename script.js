@@ -97,11 +97,3 @@ pokemonArray.forEach(function (card) {
     pokemonArray.splice(pokemonArray.indexOf(card), 1);
   });
 });
-
-function totalCP(pokemons) {
-  let total = 0;
-  pokemons.forEach((pokemon) => {
-    total += pokemon.cp;
-  });
-  return total;
-}
