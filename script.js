@@ -93,7 +93,7 @@ pokemonArray.forEach(function (card) {
       let pokemon = pokemons.find((p) => p.id === parseInt(id));
       totalCP += pokemon.cp;
     });
-    total.innerHTML = totalCP;
+    total.innerText = "Total CP: " + totalCP;
     pokemonArray.splice(pokemonArray.indexOf(card), 1);
   });
 });
